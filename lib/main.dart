@@ -1,12 +1,12 @@
-import 'package:dicesapp/dices/coin.dart';
-import 'package:dicesapp/dices/dice_10.dart';
-import 'package:dicesapp/dices/dice_12.dart';
-import 'package:dicesapp/dices/dice_20.dart';
-import 'package:dicesapp/dices/dice_6.dart';
 import 'package:flutter/material.dart';
 
-import 'dices/dice_4.dart';
-import 'dices/dice_8.dart';
+import 'dices/basic/coin.dart';
+import 'dices/basic/dice_10.dart';
+import 'dices/basic/dice_12.dart';
+import 'dices/basic/dice_20.dart';
+import 'dices/basic/dice_4.dart';
+import 'dices/basic/dice_6.dart';
+import 'dices/basic/dice_8.dart';
 
 void main() {
   runApp(MyApp());
