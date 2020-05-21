@@ -1,10 +1,10 @@
+import 'package:dicesapp/dices/genesys/ability_dice.dart';
+import 'package:dicesapp/dices/genesys/difficulty_dice.dart';
 import 'package:flutter/material.dart';
 
-import 'dices/basic/coin.dart';
 import 'dices/basic/dice_10.dart';
 import 'dices/basic/dice_12.dart';
 import 'dices/basic/dice_20.dart';
-import 'dices/basic/dice_4.dart';
 import 'dices/basic/dice_6.dart';
 import 'dices/basic/dice_8.dart';
 
@@ -22,11 +22,11 @@ class MyApp extends StatelessWidget {
         ),
         body: ListView(
           children: <Widget>[
-            Text(Coin().roll().toString()),
+            Text(AbilityDice().roll().toString()),
             SizedBox(
               height: 10,
             ),
-            Text(Dice4().roll().toString()),
+            Text(DifficultyDice().roll().toString()),
             SizedBox(
               height: 10,
             ),
