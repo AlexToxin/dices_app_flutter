@@ -1,6 +1,8 @@
-import 'package:dicesapp/dices/genesys/ability_dice.dart';
-import 'package:dicesapp/dices/genesys/difficulty_dice.dart';
+import 'package:dicesapp/genesys/dices/difficulty_dice.dart';
+import 'package:dicesapp/screens/tapbar_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'file:///C:/Users/Alexander/AndroidStudio/Projects/dices_app/lib/genesys/dices/ability_dice.dart';
 
 import 'dices/basic/dice_10.dart';
 import 'dices/basic/dice_12.dart';
@@ -15,6 +17,10 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData.dark(),
+      home: TabBarScreen(),
+    );
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
