@@ -1,4 +1,4 @@
-class GenesysTypes {
+class GenesysResultTypes {
   static const Advantage = 'Advantage';
   static const Despair = 'Despair';
   static const Failure = 'Failure';
