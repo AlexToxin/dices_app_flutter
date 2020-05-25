@@ -1,10 +1,9 @@
-import 'package:dicesapp/dices/basic/dice.dart';
 import 'package:dicesapp/dices/basic/dice_6.dart';
 import 'package:dicesapp/genesys/dices/genesys_dice.dart';
 import 'package:dicesapp/genesys/dices/genesys_result_types.dart';
 
 class SetbackDice extends GenesysDice {
-  SetbackDice(Dice dice) : super(Dice6());
+  SetbackDice() : super(Dice6());
 
   final resultComparing = {
     1: [],

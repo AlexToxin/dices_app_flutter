@@ -1,6 +1,6 @@
 import 'package:dicesapp/dices/basic/dice.dart';
 
-class GenesysDice {
+class GenesysDice implements Dice {
   final Dice _dice;
 
   GenesysDice(this._dice);

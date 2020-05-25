@@ -12,13 +12,19 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^0.1.3
-  font_awesome_flutter: ^8.8.1
   getflutter: ^1.0.11
+  flutter_icons: ^1.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-
 flutter:
   uses-material-design: true
+  fonts:
+    - family: PermanentMarker
+      fonts:
+        - asset: assets/fonts/PermanentMarker-Regular.ttf
+    - family: LeckerliOne
+      fonts:
+        - asset: assets/fonts/LeckerliOne-Regular.ttf

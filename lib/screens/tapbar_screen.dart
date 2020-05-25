@@ -1,6 +1,5 @@
 import 'package:dicesapp/genesys/screens/main.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:getflutter/getflutter.dart';
 
 class TabBarScreen extends StatefulWidget {
@@ -25,20 +24,18 @@ class _TabBarScreenState extends State<TabBarScreen>
         controller: tabController,
         children: <Widget>[
           GenesysMainScreen(),
+          Center(child: Icon(Icons.ac_unit)),
           Center(
-            child: FaIcon(FontAwesomeIcons.search),
-          ),
-          Center(
-            child: FaIcon(FontAwesomeIcons.info),
+            child: Icon(Icons.data_usage),
           ),
         ],
       ),
       bottomNavigationBar: GFTabBar(
         controller: tabController,
         tabs: <Widget>[
-          FaIcon(FontAwesomeIcons.mountain),
-          FaIcon(FontAwesomeIcons.search),
-          FaIcon(FontAwesomeIcons.info),
+          Icon(Icons.hearing),
+          Icon(Icons.ac_unit),
+          Icon(Icons.data_usage),
         ],
         tabBarColor: Colors.black,
         length: 3,
