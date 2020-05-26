@@ -1,4 +1,4 @@
-import 'package:dicesapp/dices/basic/dice.dart';
+import 'package:dicesapp/basic/dices/dice.dart';
 
 class GenesysDice implements Dice {
   final Dice _dice;

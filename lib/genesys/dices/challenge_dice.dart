@@ -1,4 +1,4 @@
-import 'package:dicesapp/dices/basic/dice_12.dart';
+import 'package:dicesapp/basic/dices/dice_12.dart';
 import 'package:dicesapp/genesys/dices/genesys_dice.dart';
 import 'package:dicesapp/genesys/dices/genesys_result_types.dart';
 

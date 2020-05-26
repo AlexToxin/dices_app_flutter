@@ -1,4 +1,4 @@
-import 'dice.dart';
+import 'package:dicesapp/basic/dices/dice.dart';
 
 class Dice12 implements Dice {
   @override

@@ -1,4 +1,4 @@
-import 'package:dicesapp/genesys/screens/main.dart';
+import 'package:dicesapp/genesys/screens/genesys_main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:getflutter/getflutter.dart';
 

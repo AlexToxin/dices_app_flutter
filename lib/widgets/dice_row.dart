@@ -1,5 +1,5 @@
-import 'package:dicesapp/dices/basic/dice.dart';
-import 'package:dicesapp/dices/basic/dice_6.dart';
+import 'package:dicesapp/basic/dices/dice.dart';
+import 'package:dicesapp/basic/dices/dice_6.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';

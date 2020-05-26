@@ -4,7 +4,7 @@ import 'package:dicesapp/genesys/dices/challenge_dice.dart';
 import 'package:dicesapp/genesys/dices/difficulty_dice.dart';
 import 'package:dicesapp/genesys/dices/proficiency_dice.dart';
 import 'package:dicesapp/genesys/dices/setback_dice.dart';
-import 'package:dicesapp/genesys/screens/result.dart';
+import 'package:dicesapp/genesys/screens/genesys_result_screen.dart';
 import 'package:dicesapp/widgets/dice_row.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
@@ -38,7 +38,7 @@ class _GenesysMainScreenState extends State<GenesysMainScreen> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ResultScreen(dicesMap),
+                    builder: (context) => GenesysResultScreen(dicesMap),
                   ),
                 );
               },
