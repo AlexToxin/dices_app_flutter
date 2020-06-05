@@ -28,3 +28,6 @@ flutter:
     - family: LeckerliOne
       fonts:
         - asset: assets/fonts/LeckerliOne-Regular.ttf
+    - family: Genesys
+      fonts:
+        - asset: assets/fonts/Genesys_Icons_05.ttf

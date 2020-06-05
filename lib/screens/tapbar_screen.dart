@@ -1,4 +1,3 @@
-import 'package:dicesapp/genesys/screens/genesys_main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:getflutter/getflutter.dart';
 
@@ -26,7 +25,33 @@ class _TabBarScreenState extends State<TabBarScreen>
           GenesysMainScreen(),
           Center(child: Icon(Icons.ac_unit)),
           Center(
-            child: Icon(Icons.data_usage),
+//            child: Icon(Icons.data_usage),
+            child: ListView(
+              children: [
+                Icon(const IconData(0xF22B0, fontFamily: 'Genesys'),
+                    size: 48.0, color: Colors.red),
+                Icon(const IconData(0xF22B1, fontFamily: 'Genesys'),
+                    size: 48.0, color: Colors.red),
+                Icon(const IconData(0xF22B2, fontFamily: 'Genesys'),
+                    size: 48.0, color: Colors.red),
+                Icon(const IconData(0xF22B3, fontFamily: 'Genesys'),
+                    size: 48.0, color: Colors.red),
+                Icon(const IconData(0xF22B4, fontFamily: 'Genesys'),
+                    size: 48.0, color: Colors.red),
+                Icon(const IconData(0xF22B5, fontFamily: 'Genesys'),
+                    size: 48.0, color: Colors.red),
+                Icon(const IconData(0xF22B6, fontFamily: 'Genesys'),
+                    size: 48.0, color: Colors.red),
+                Icon(const IconData(0xF22B7, fontFamily: 'Genesys'),
+                    size: 48.0, color: Colors.red),
+                Icon(const IconData(0xF22B8, fontFamily: 'Genesys'),
+                    size: 48.0, color: Colors.red),
+                Icon(const IconData(0xF22BA, fontFamily: 'Genesys'),
+                    size: 48.0, color: Colors.red),
+                Icon(const IconData(0xF22BB, fontFamily: 'Genesys'),
+                    size: 48.0, color: Colors.red),
+              ],
+            ),
           ),
         ],
       ),
