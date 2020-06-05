@@ -1,6 +1,5 @@
-import 'package:dicesapp/basic/dices/dice_8.dart';
-import 'package:dicesapp/genesys/dices/genesys_dice.dart';
-import 'package:dicesapp/genesys/dices/genesys_result_types.dart';
+import 'package:dicesapp/libraries/basic_dices.dart';
+import 'package:dicesapp/libraries/genesys_dices.dart';
 
 class AbilityDice extends GenesysDice {
   AbilityDice() : super(Dice8());

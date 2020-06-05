@@ -1,28 +1,34 @@
-import 'package:dicesapp/genesys/dices/ability_dice.dart';
-import 'package:dicesapp/genesys/dices/boost_dice.dart';
-import 'package:dicesapp/genesys/dices/challenge_dice.dart';
-import 'package:dicesapp/genesys/dices/difficulty_dice.dart';
-import 'package:dicesapp/genesys/dices/proficiency_dice.dart';
-import 'package:dicesapp/genesys/dices/setback_dice.dart';
-import 'package:dicesapp/genesys/screens/genesys_result_screen.dart';
+import 'package:dicesapp/libraries/basic_dices.dart';
+import 'package:dicesapp/libraries/genesys_dices.dart';
+import 'package:dicesapp/screens/result_screen.dart';
 import 'package:dicesapp/widgets/dice_row.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
 class GenesysMainScreen extends StatefulWidget {
+  final dicesMap = {
+    'Boost': BoostDice(),
+    'Setback': SetbackDice(),
+    'Ability': AbilityDice(),
+    'Difficulty': DifficultyDice(),
+    'Proficiency': ProficiencyDice(),
+    'Challenge': ChallengeDice(),
+    'TenSided': Dice10(),
+  };
+
   @override
   _GenesysMainScreenState createState() => _GenesysMainScreenState();
 }
 
 class _GenesysMainScreenState extends State<GenesysMainScreen> {
-  Map<String, int> dicesMap = {
-    'Boost': 0,
-    'Setback': 0,
-    'Ability': 0,
-    'Difficulty': 0,
-    'Proficiency': 0,
-    'Challenge': 0,
-    'TenSided': 0,
+  Map<Dice, int> dicesMap = {
+    dicesMap['Boost']: 0,
+    dicesMap['Setback']: 0,
+    dicesMap['Ability']: 0,
+    dicesMap['Difficulty']: 0,
+    dicesMap['Proficiency']: 0,
+    dicesMap['Challenge']: 0,
+    dicesMap['TenSided']: 0,
   };
 
   @override
@@ -38,7 +44,7 @@ class _GenesysMainScreenState extends State<GenesysMainScreen> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => GenesysResultScreen(dicesMap),
+                    builder: (context) => ResultScreen(dicesMap.),
                   ),
                 );
               },
